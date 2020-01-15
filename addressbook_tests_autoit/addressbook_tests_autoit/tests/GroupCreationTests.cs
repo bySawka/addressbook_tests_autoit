@@ -24,7 +24,19 @@ namespace addressbook_tests_autoit
             oldGroups.Sort();
             newGroups.Sort();
 
+            System.Console.Out.WriteLine("oldGroups");
+            foreach (var t in oldGroups)
+            {
+                System.Console.Out.WriteLine(t.Name);
+            }
+            System.Console.Out.WriteLine("newGroups");
+
+            foreach (var t in newGroups)
+            {
+                System.Console.Out.WriteLine(t.Name);
+            }
             Assert.AreEqual(oldGroups, newGroups);
+
         }
     }
 }

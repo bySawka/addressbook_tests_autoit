@@ -21,7 +21,7 @@ namespace addressbook_tests_autoit
         public ApplicationManager()
         {
             aux = new AutoItX3();
-            aux.Run(@"F:\САНЬКА\Курсы\AdressBook\AddressBook.exe","", aux.SW_SHOW);
+            aux.Run(@"D:\САНЬКА\Курсы\AdressBook\AddressBook.exe","", aux.SW_SHOW);
             WinWaitActivate();
 
             groupHelper = new GroupHelper(this);
